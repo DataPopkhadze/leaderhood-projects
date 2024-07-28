@@ -1,0 +1,171 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+#div1 {
+    background-color: hsl(263, 55%, 52%);
+    width: 600px;
+    border: 1px solid hsl(263, 55%, 52%);
+    margin: 100px;
+    height: 300px;
+    margin-top: 60px;
+    display: grid;
+    border-radius: 7px;
+
+    
+}
+
+#div2 {
+    background-color: hsl(0, 0%, 81%);
+    width: 300px; 
+    border: 1px solid hsl(0, 0%, 81%);
+    margin: 50px;
+    height: 250px;
+    margin-top: 50px;
+    border-radius: 7px;
+    position: relative;
+    left: 50px;
+}
+
+#div3 {
+    background-color: hsl(0, 0%, 81%);
+    width: 300px; 
+    border: 1px solid hsl(0, 0%, 81%);
+    margin: 50px;
+    height: 700px;
+    margin-top: 50px;
+    border-radius: 7px;
+    margin-left: 1200px;
+    position: relative;
+    bottom: 700px;
+}
+
+#div4 {
+    background-color:hsl(210, 100%, 16%);
+    width: 300px; 
+    border: 1px solid hsl(210, 100%, 16%);
+    margin: 50px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 7px;
+    margin-left: 800px;
+    position: relative;
+    bottom: 1450px;
+}
+
+#div5 {
+    background-color:hsl(208, 20%, 18%);
+    width: 600px; 
+    border: 1px solid hsl(210, 20%, 22%);
+    margin: 50px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 7px;
+    margin-left: 800px;
+    position: relative;
+    bottom: 1450px;
+    right: 300px;
+}
+
+.div2 p {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: hsl(263, 100%, 84%);
+    position: relative;
+    top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.div2 h3 {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: white;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+
+.div7 p {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: rgb(133, 151, 253);
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.div7 h3 {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.div3 h3 {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: rgb(1, 1, 24);
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.div3 p {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: grey;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.div9 h3 {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: rgb(255, 254, 254);
+    position: relative;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.div9 p {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: darkgrey;
+    position: relative;
+    top: -2px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.div5 p {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: grey;
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.div5 h3 {
+    @import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    color: darkblue;
+    position: relative;
+    top: 80px;
+    font-size: 24px;
+}
+
+.div9 h5 {
+
+    color: white;
+    position: relative;
+    left: 70px;
+    top: 1px;
+}
+
