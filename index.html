@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <label for="role">Role:</label>
+            <select id="role" required>
+                <option value="viewer">Viewer</option>
+                <option value="moderator">Moderator</option>
+            </select>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <div id="student-table" style="display:none">
+        <h2>Student List</h2>
+        <table border = "1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mother's Name</th>
+                    <th>Facebook</th>
+                    <th>Age</th>
+                    <th>Group Leader</th>
+                </tr>
+            </thead>
+            <tbody id="student-list"></tbody>
+        </table>
+    </div>
+
+    <div class="moderator-only" id="moderator-form" style="display:none">
+        <h2>Manage Students</h2>
+        <form id="student-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="mothersName" placeholder="Mother's Name" required>
+            <input type="text" id="facebookAccount" placeholder="Facebook Account" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="groupLeader" placeholder="Group Leader" required>
+            <button type="submit">Add/Update Student</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
