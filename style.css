@@ -48,3 +48,7 @@ th, td{
 #student-form input {
     width: 280px;
 }
+
+button:hover{
+    background-color: #1a6e1d;
+}
