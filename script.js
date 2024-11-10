@@ -1,67 +1,17 @@
-let students = [
-    {
-        name: "data",
-        mothersName: "data",
-        facebookAccount: "data.data",
-        age: 20,
-        groupLeader: "data popkhadze"
-    },
-    {
-        name: "luka",
-        mothersName: "luka",
-        facebookAccount: "luka.luka",
-        age: 22,
-        groupLeader: "data fofxadze"
-    }
-];
+function information () {
+    const apiKey = "3bd9b53a9b9d4d36894133733241011"
 
+    const city = 'Tbilisi'
 
-document.getElementById('signin-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    let role = document.getElementById('role').value;
-
-
-    document.getElementById('student-table').style.display = 'block';
-
-
-    if (role === 'moderator') {
-        document.getElementById('moderator-form').style.display = 'block';
-    }
-
-
-    loadStudents();
-});
-
-function loadStudents() {
-    const tableBody = document.getElementById('student-list');
-    tableBody.innerHTML = '';  
-
-    students.forEach(student => {
-        let row = "<tr>";  
-        row += "<td>" + student.name + "</td>";  
-        row += "<td>" + student.mothersName + "</td>"; 
-        row += "<td>" + student.facebookAccount + "</td>"; 
-        row += "<td>" + student.age + "</td>";  
-        row += "<td>" + student.groupLeader + "</td>";  
-        row += "</tr>";  
-        tableBody.innerHTML += row;  
-    });
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`)
+        .then(response => response.json())
+        // .then(data => console.log(data.main.temp + 'C, ' + data.weather[0].description))
+        .then(data => console.log(data.current.temp_c))
 }
 
-document.getElementById('student-form').addEventListener('submit', function(e) {
-    e.preventDefault();
 
+const input = document.querySelector("cityInput")
 
-    let student = {
-        name: document.getElementById('name').value,
-        mothersName: document.getElementById('mothersName').value,
-        facebookAccount: document.getElementById('facebookAccount').value,
-        age: document.getElementById('age').value,
-        groupLeader: document.getElementById('groupLeader').value
-    };
+const inputValue = input.value
 
-
-    students.push(student);
-    loadStudents();
-});
+inputValue = information
